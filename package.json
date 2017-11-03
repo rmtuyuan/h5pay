@@ -1,5 +1,5 @@
 {
-  "name": "h5pay",
+  "name": "comm-vue",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "rmtuyuan <mr_cui1004@163.com>",
@@ -11,11 +11,13 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "element-ui": "^2.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "axios": "^0.17.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^7.1.1",

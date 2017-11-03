@@ -23,20 +23,20 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {
     rules: [
-      {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: [resolve('src'), resolve('test')],
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
-      },
+      // {
+      //   test: /\.(js|vue)$/,
+      //   loader: 'eslint-loader',
+      //   enforce: 'pre',
+      //   include: [resolve('src'), resolve('test')],
+      //   options: {
+      //     formatter: require('eslint-friendly-formatter')
+      //   }
+      // },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -70,6 +70,10 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.sass$/,
+        loaders: ['style', 'css', 'sass']
       }
     ]
   }
