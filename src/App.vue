@@ -353,7 +353,9 @@
     -webkit-justify-content: center;
     margin: .1rem 0;
   }
-
+  span{
+    font-size: .14rem;
+  }
   .momey-list-col.active {
     background: #fe416e;
     color: #fff;
