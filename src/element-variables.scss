@@ -14,6 +14,10 @@ $--color-primary: $base-color;
     -webkit-overflow-scrolling: touch;
 }
 
+.el-message__icon{
+  font-size: .3rem;
+}
+
 /* 改变 icon 字体路径变量，必需 */
 $--font-path: '../node_modules/element-ui/lib/theme-chalk/fonts';
 
